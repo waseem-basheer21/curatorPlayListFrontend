@@ -23,7 +23,7 @@ const PlaylistForm = () => {
     }));
 
     try {
-      await api.post("/playlists", {
+      await api.post("/api/playlists", {
         data: { ...formData, song: formattedSongs },
       });
       toast.success("Playlist created successfully!");
