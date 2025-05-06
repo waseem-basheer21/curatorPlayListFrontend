@@ -7,7 +7,6 @@ export default function HomePage() {
   const location = useLocation();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState("");
-
   useEffect(() => {
     const token = localStorage.getItem("jwtToken");
     const name = localStorage.getItem("username");
