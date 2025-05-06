@@ -20,7 +20,7 @@ const LoginForm = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
-      const res = await api.post("/auth/local", data);
+      const res = await api.post("/api/auth/local", data);
       const { jwt, user } = res.data;
 
       setAuthToken(jwt);

@@ -16,11 +16,12 @@ api.interceptors.request.use((config) => {
 });
 
 export const setAuthToken = (token) => {
-  localStorage.setItem('token', token);
+  localStorage.setItem('jwtToken', token); 
 };
 
 export const clearAuthToken = () => {
-  localStorage.removeItem('token');
+  localStorage.removeItem('jwtToken');
 };
+
 
 export default api;

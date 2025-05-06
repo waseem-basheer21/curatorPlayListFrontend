@@ -27,7 +27,7 @@ const RegisterForm = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await api.post("/auth/local/register", {
+      const response = await api.post("/api/auth/local/register", {
         username: data.username,
         email: data.email,
         password: data.password,
