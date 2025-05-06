@@ -8,7 +8,7 @@ export default function PlayList() {
   useEffect(() => {
     const fetchPlayLists = async () => {
       try {
-        const response = await api.get("/playlists?populate=song");
+        const response = await api.get("/api/playlists?populate=song");
         setPlaylists(response.data.data);
       } catch (error) {
         console.error("Error fetching playlists:", error);
